@@ -1,0 +1,42 @@
+site_name: DCR V2 Documentation
+
+theme:
+  favicon: https://chat-reviver.com/assets/img/dcr-logo.png
+  logo: https://chat-reviver.com/assets/img/dcr-logo.png
+  name: 'material'
+  palette:
+    scheme: slate
+    primary: black
+  features:
+    - navigation.instant
+    - navigation.sections
+    - toc.integrate
+    - navigation.tabs
+  icon: 
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: '#'
+
+plugins:
+  - search
+
+nav:
+  - Welcome:
+    - index.md
+  - Getting Started:
+    - start/index.md
+    - start/commands.md
+  - Support the Dev:
+    - support/premium.md
+    - support/vote.md
+
+repo_url: https://github.com/poldis/dcr-docs
+repo_name: poldis/dcr-docs
+edit_uri: ""
